@@ -9,7 +9,7 @@
 
     include (__SITE_PATH . '/View/header.php');
     include(__SITE_PATH . '/model/Security.php');
-    include(__SITE_PATH . '/model/user.php');
+    //include(__SITE_PATH . '/model/user.php');
 
     if (!empty($_GET['page']) && is_file('Controller/'.$_GET['page'].'.class.php'))
     {

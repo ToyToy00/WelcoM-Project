@@ -12,12 +12,12 @@
   <meta name="keywords" content="">
   <meta name="author" content="WelcoM">
   <title>WelcoM</title> <!-- website title -->
-  <link type='text/css' href='css/bootstrap.min.css' rel='stylesheet'>
-  <link type='text/css' href='css/style.css' rel='stylesheet'>
-  <link type='text/css' href='css/color.css' rel='stylesheet'>
+  <link type='text/css' href="<?php echo __SITE_URL.'/Assets/css/bootstrap.min.css' ?>" rel='stylesheet'>
+  <link type='text/css' href="<?php echo __SITE_URL.'/Assets/css/style.css' ?>" rel='stylesheet'>
+  <!--<link type='text/css' href='css/color.css' rel='stylesheet'>-->
   <link rel="icon" href="img/favicon.ico"> <!-- website icon -->
 </head>
-<?php require '/Controller/localization.php'; ?>
+<?php// require __SITE_URL.'/Controller/localization.class.php'; ?>
 <body>
   <!--<div class="overlay"></div> <!-- overlay -->
   <!--<div class="pattern"></div> <!-- pattern -->
@@ -48,4 +48,3 @@
             <li ><a href="#"></a>Contact</li>
         </ul>
     </nav>
-</body>
