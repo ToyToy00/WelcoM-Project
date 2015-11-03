@@ -6,13 +6,156 @@ and open the template in the editor.
 /* 
     Created on : 24 sept. 2015, 16:28:47
     Author     : Clément
+
+
+a. Webfonts and Icon fonts
+b. Reset
+c. Default Styles
+   1. Basic
+   2. Typography
+   3. Links
+   4. Images
+   5. Buttons
+   6. Forms
+d. Grid
+e. Others
+   1. Clearing
+   2. Misc
+
+
 */
 
+//=====================================================================  */
+
+/* ------------------------------------------------------------------ */
+/* a. Webfonts and Icon fonts
+ ------------------------------------------------------------------ */
+
+@import url();
+
+
+
+/* ------------------------------------------------------------------
+/* b. Reset
+/* ------------------------------------------------------------------ */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   background: transparent;
+}
 li {
     list-style: none;
 }
-#menu {
-    display:inline-flex;
-    display:-webkit-inline-flex;
-    display:-ms-inline-flex;
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+   display: block;
+}
+body{
+    overflow:hidden;
+}
+
+/* ------------------------------------------------------------------ */
+/* c. Default and Basic Styles
+      Adapted from:
+      Skeleton CSS Framework - http://www.getskeleton.com/
+      Typeplate Typographic Starter Kit - http://typeplate.com/
+/* ------------------------------------------------------------------ */
+
+/*  1. Basic  ------------------------------------------------------- */
+#loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: #222222;
+    z-index: 1000;
+}
+ 
+#loader-wrapper .loader-section.section-left {
+    left: 0;
+}
+ 
+#loader-wrapper .loader-section.section-right {
+    right: 0;
+}
+#loader {
+    z-index: 1001; /* anything higher than z-index: 1000 of .loader-section */
+}
+.loaded #loader-wrapper .loader-section.section-left {
+    -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(-100%);  /* IE 9 */
+    transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+}
+ 
+.loaded #loader-wrapper .loader-section.section-right {
+    -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(100%);  /* IE 9 */
+    transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+}
+.loaded #loader {
+    opacity: 0;
+}
+.loaded #loader-wrapper {
+    visibility: hidden;
+}
+/*  2. Typography
+       Vertical rhythm with leading derived from 6
+--------------------------------------------------------------------- */
+
+/*  3. Links  ------------------------------------------------------- */
+
+/*  4. List  --------------------------------------------------------- */
+
+
+/*  5. Images  --------------------------------------------------------- */
+
+/*  6. Buttons  --------------------------------------------------------- */
+
+/*  7. Forms  --------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------
+/* d. Grid
+/* ------------------------------------------------------------------ */
+#dropdown1{
+    margin-top: 64px;
+}
+.brand-logo{
+    padding-left: 1%;
+}
+/* ------------------------------------------------------------------
+/* e. Other
+/* ------------------------------------------------------------------ */
+.nav-wrapper{
+    background-color:#263238;
+}
+#map{
+    top:200px;
+    height:200px;
+    transition: top .2s, height .2s;
+
+}
+
+#map:focus{
+    top:0;
+    height:400px;
+}
+.body-contain{
+    height:500px;
 }

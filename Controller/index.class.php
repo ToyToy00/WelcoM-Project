@@ -1,8 +1,21 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+class index_class extends router {
 
+    protected $registry;
+
+    function __construct($registry) {
+        $this->registry = $registry;
+    }
+
+    function index() {
+
+        $this->registry->template->show('index');
+        
+    }
+    function plan_site() {
+        $this->registry->template->show('plan_site');
+    }
+
+}
+?>

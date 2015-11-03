@@ -12,39 +12,55 @@
   <meta name="keywords" content="">
   <meta name="author" content="WelcoM">
   <title>WelcoM</title> <!-- website title -->
-  <link type='text/css' href="<?php echo __SITE_URL.'/Assets/css/bootstrap.min.css' ?>" rel='stylesheet'>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type='text/css' href="<?php echo __SITE_URL.'/Assets/css/style.css' ?>" rel='stylesheet'>
+  <link type='text/css' href="<?php echo __SITE_URL.'/Assets/css/materialize.css' ?>" rel='stylesheet'>
+  
   <!--<link type='text/css' href='css/color.css' rel='stylesheet'>-->
   <link rel="icon" href="img/favicon.ico"> <!-- website icon -->
 </head>
-<?php// require __SITE_URL.'/Controller/localization.class.php'; ?>
+
 <body>
-  <!--<div class="overlay"></div> <!-- overlay -->
-  <!--<div class="pattern"></div> <!-- pattern -->
 
-  <!-- preloader -->
-  <div id="preloader">
-    <div id="preloader-img"></div>
+    <!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="#!">Restauration</a></li>
+  <li><a href="#!">Se cultiver</a></li>
+  <li><a href="#!">La nuit</a></li>
+  <li><a href="#!">Shopping</a></li>
+</ul>
+<nav>
+  <div class="nav-wrapper">
+    <a href="#!" class="brand-logo">WelcoM To</a>
+    <ul class="right hide-on-med-and-down">
+      <li><a class="waves-effect waves-light" href="#">Accueil</a></li>
+      <li><a class="waves-effect waves-light" href="#">Histoire</a></li>
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button waves-effect waves-light" href="#!" data-activates="dropdown1">Découvir<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a class="waves-effect waves-light" href="#">Portfolio</a></li>
+      <li><a class="waves-effect waves-light" href="#">Contact</a></li>
+    </ul>
+     <ul class="side-nav" id="slide-out">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Histoire</a></li>
+        <li class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+              <li>
+                <a class="collapsible-header">Découvrir<i class="mdi-navigation-arrow-drop-down"></i></a>
+                <div class="collapsible-body">
+                  <ul>
+                    <li><a href="#!">Restauration</a></li>
+                    <li><a href="#!">Se cultiver</a></li>
+                    <li><a href="#!">La nuit</a></li>
+                    <li><a href="#!">Shopping</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+        </li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+     <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
   </div>
-  <!-- /preloader -->
-
-    <nav class="nav-menu">
-        <ul id="menu">
-            <li ><a href="#"></a>Accueil</li>
-            <li ><a href="#"></a>Histoire</li>
-            <div class="dropdown">
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                  Decouvrir
-                  <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                  <li><a href="#">Restauration</a></li>
-                  <li><a href="#">Se Cultiver</a></li>
-                  <li><a href="#">La Nuit</a></li>
-                  <li><a href="#">Shopping</a></li>
-                </ul>
-            </div>
-            <li ><a href="#"></a>Portfolio</li>
-            <li ><a href="#"></a>Contact</li>
-        </ul>
-    </nav>
+</nav>
