@@ -1,21 +1,6 @@
 <?php
 
-class index_class extends router {
+include(__SITE_PATH . '/View/index.php');
 
-    protected $registry;
 
-    function __construct($registry) {
-        $this->registry = $registry;
-    }
-
-    function index() {
-
-        $this->registry->template->show('index');
-        
-    }
-    function plan_site() {
-        $this->registry->template->show('plan_site');
-    }
-
-}
 ?>

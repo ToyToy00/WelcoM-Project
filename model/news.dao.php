@@ -1,5 +1,5 @@
 <?php
-class portfolio_pdo {
+class news_pdo {
     
     function __construct()
     {

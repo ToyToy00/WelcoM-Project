@@ -10,9 +10,15 @@ $( document ).ready(function(){
       closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
     }
   );
-    
+    $('.modal-trigger').leanModal();
+    $('.materialboxed').materialbox();
+     $('.slider').slider({height:200});
 });
 
+$(window).load(function() {
+    $('#status').fadeOut();
+    $('#preloader').delay(300).fadeOut('slow');
+});
   
   function initMap() {
 
@@ -40,7 +46,7 @@ $( document ).ready(function(){
   ];
   // Create a map object and specify the DOM element for display.
   var map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 43.2977832, lng: 5.3696671},
+    center: {lat: 43.299298, lng: 5.3685412},
     scrollwheel: false,
     // Apply the map style array to the map.
     styles: styleArray,

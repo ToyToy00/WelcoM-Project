@@ -66,9 +66,6 @@ article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section {
    display: block;
 }
-body{
-    overflow:hidden;
-}
 
 /* ------------------------------------------------------------------ */
 /* c. Default and Basic Styles
@@ -158,4 +155,31 @@ body{
 }
 .body-contain{
     height:500px;
+}
+
+
+/* ---------------------------------------------- /*
+ * Preloader
+/* ---------------------------------------------- */
+
+#preloader {
+	background: #ffffff;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 9999;
+}
+
+#status {
+	background-image: url(../img/385.GIF);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 200px;
+	left: 50%;
+	margin: -100px 0 0 -100px;
+	position: absolute;
+	top: 50%;
+	width: 200px;
 }

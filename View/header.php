@@ -22,6 +22,8 @@
 
 <body>
 
+
+
     <!-- Dropdown Structure -->
 <ul id="dropdown1" class="dropdown-content">
   <li><a href="#!">Restauration</a></li>
@@ -34,7 +36,7 @@
     <a href="#!" class="brand-logo">WelcoM To</a>
     <ul class="right hide-on-med-and-down">
       <li><a class="waves-effect waves-light" href="#">Accueil</a></li>
-      <li><a class="waves-effect waves-light" href="#">Histoire</a></li>
+      <li><a class="waves-effect waves-light" href="?page=news"">Histoire</a></li>
       <!-- Dropdown Trigger -->
       <li><a class="dropdown-button waves-effect waves-light" href="#!" data-activates="dropdown1">Découvir<i class="material-icons right">arrow_drop_down</i></a></li>
       <li><a class="waves-effect waves-light" href="#">Portfolio</a></li>

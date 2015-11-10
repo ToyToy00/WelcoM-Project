@@ -1,20 +1,23 @@
 <?php
     session_start();
+    
     $site_path = realpath(dirname(__FILE__));
     define ('__SITE_PATH', $site_path);
-
     $site_url = str_replace('C:\wamp\www\\','/',__SITE_PATH);
     define ('__SITE_URL', $site_url);
-
-    include __SITE_PATH . '/registry.php';
-    include __SITE_PATH . '/Controller/template.class.php';
-    include '/model/db.dao.php';  
-    include 'init.php'; //inclu les classe maitres
-
-     /*** a new registry object ***/
-     $registry = new registry;
-     $registry->router = new router($registry,__SITE_PATH);
-     $registry->template = new template($registry);
-     $registry->router->loader();
-
+    
+    include (__SITE_PATH . '/View/header.php');
+    include(__SITE_PATH . '/model/Security.php');
+    include(__SITE_PATH . '/model/user.php');
+    
+    if (!empty($_GET['page']) && is_file('Controller/'.$_GET['page'].'.class.php'))
+    {
+            include 'Controller/'.$_GET['page'].'.class.php';
+    }
+    else
+    {
+            include 'Controller/index.class.php';
+    }
+    
+    include (__SITE_PATH .'/View/footer.php');
 ?>
